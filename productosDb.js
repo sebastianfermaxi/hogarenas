@@ -22,25 +22,18 @@ const especial = new Producto({
     productoImagen: '/img/pizzaEsp.png'
 });
 
-const empanadasCarne = new Producto({
-    productoNombre: 'Empanadas por Docena (Carne Molida)',
-    productoDescripcion: 'Con Carne Molida',
-    productoPrecio: '$ 900',
-    productoImagen: '/img/empanadasCarne.png'
-});
-
 const empanadasCarnePicada = new Producto({
     productoNombre: 'Empanadas por Docena (Carne Picada a Cuchillo)',
     productoDescripcion: 'Con Carne Picada a Cuchillo',
     productoPrecio: '$ 900',
-    productoImagen: '/img/empanadasPicada.png'
+    productoImagen: '/img/empanadasCarne.png'
 });
 
-const empanadasCarneMedia = new Producto({
-    productoNombre: 'Empanadas por Media Docena (Carne Molida)',
-    productoDescripcion: 'Con Carne Molida',
-    productoPrecio: '$ 500',
-    productoImagen: '/img/empanadasCarne.png'
+const empanadasCarnePicadaMedia = new Producto({
+    productoNombre: 'Empanadas por Media Docena (Carne Picada a Cuchillo)',
+    productoDescripcion: 'Con Carne Picada a Cuchillo',
+    productoPrecio: '$ 900',
+    productoImagen: '/img/empanadasPicada.png'
 });
 
 const empanadasJQ = new Producto({
@@ -103,9 +96,8 @@ const guardarProducto = async () => {
     await muzzarella.save();
     await fugazza.save();
     await especial.save();
-    await empanadasCarne.save();
     await empanadasCarnePicada.save();
-    await empanadasCarneMedia.save();
+    await empanadasCarnePicadaMedia.save();
     await empanadasJQ.save();
     await empanadasJQmedia.save();
     await hamburguesaGrandeComp.save();
