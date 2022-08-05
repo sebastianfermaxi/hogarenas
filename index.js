@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const {create} = require('express-handlebars');
 const guardarProducto = require('./productosDb');
+const guardarPromos = require('./promosDB');
 require('./database/db');
 
 
@@ -27,11 +28,11 @@ app.set("views","./views");
 
 
 app.use('/', require('./Routes/inicio'));
-app.get('/promos', (req,res)=>{
-    res.render('promos')
-});
+app.get('/promos',require('./Routes/promos'));
 app.get('/contacto', (req, res) => {
     res.render('contacto')
 });
 
 //guardarProducto();
+//guardarPromos();
+

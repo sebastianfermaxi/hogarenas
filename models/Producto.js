@@ -17,6 +17,10 @@ const productoSchema = new Schema({
     productoImagen: {
         type: String,
         required: true
+    },
+    tipo:{
+        type: String,
+        default: "Producto"
     }
 });
 

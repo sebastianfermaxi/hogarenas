@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const leerPromos = require ('../Controllers/leerPromos')
 
-router.get('/promos', (req,res)=>{
-    console.log(req)
-    res.send('promos');
-});
+router.get('/promos', leerPromos);
 
 module.exports = router;
