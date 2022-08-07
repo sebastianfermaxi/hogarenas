@@ -7,3 +7,15 @@ body {
 .fon{
     background: #f9f5e3;
 }
+
+.fon2{
+    background-color: transparent;
+}
+.fon3{
+    font-family: 'Shrikhand', cursive;
+    color: rgb(234, 40, 40)
+}
+.fon4{
+    font-family: 'Shrikhand', cursive;
+        color: black
+}
