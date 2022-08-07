@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const {create} = require('express-handlebars');
 const guardarProducto = require('./productosDb');
 const guardarPromos = require('./promosDB');
@@ -25,7 +24,7 @@ app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
 app.set("views","./views");
 
-
+app.use(express.static(__dirname + '/public'));
 
 app.use('/', require('./Routes/inicio'));
 app.get('/promos',require('./Routes/promos'));

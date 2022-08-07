@@ -54,14 +54,14 @@ const hamburguesaGrandeComp = new Producto({
     productoNombre: 'Hamburguesa Súper (Para compartir)',
     productoDescripcion: 'Tomate, Lechuga, Jamón Cocido, Huevo y Queso',
     productoPrecio: '$ 800',
-    productoImagen: '/img/hamburguesaCom.png'
+    productoImagen: '/img/hamburguesaComp.png'
 });
 
 const hamburguesaGrandeSim = new Producto({
     productoNombre: 'Hamburguesa Simple (Para compartir)',
     productoDescripcion: 'Tomate, Lechuga',
     productoPrecio: '$ 600',
-    productoImagen: 'https://cdn-icons-png.flaticon.com/512/2771/2771401.png'
+    productoImagen: '/img/hamburguesaSimp.png'
 });
 
 const burguerPizza = new Producto({
@@ -75,7 +75,7 @@ const papasHogarenasMed = new Producto({
     productoNombre: 'Papas Hogareñas Medianas',
     productoDescripcion: 'Salsa Cheddar, Peregil',
     productoPrecio: '$ 350',
-    productoImagen: 'https://cdn-icons-png.flaticon.com/512/2771/2771401.png'
+    productoImagen: '/img/papasMed.png'
 });
 
 const papasHogarenasGran = new Producto({
@@ -89,7 +89,7 @@ const papasHogarenasSup = new Producto({
     productoNombre: 'Super Papas Hogareñas',
     productoDescripcion: 'Jamón Cocido, Huevo, Salsa Cheddar, Peregil',
     productoPrecio: '$ 550',
-    productoImagen: '/img/superPapasHog.png'
+    productoImagen: '/img/papasHogar.png'
 });
 
 const guardarProducto = async () => {
